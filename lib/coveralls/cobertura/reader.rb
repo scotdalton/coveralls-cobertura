@@ -43,23 +43,17 @@ module Coveralls
       end
 
       def classes
-        @classes ||= classes_root[:class] unless classes_root.nil?
-      end
-
-      def classes_root
-        @classes_root ||= packages[:classes] unless packages.nil?
+        packages.map do |package|
+          array_from_collection(package[:classes][:class])
+        end.flatten
       end
 
       def packages
-        @packages ||= packages_root[:package] unless packages_root.nil?
+        @packages ||= array_from_collection(coverage[:packages][:package])
       end
 
-      def packages_root
-        @packages_root ||= coverage_root[:packages] unless coverage_root.nil?
-      end
-
-      def coverage_root
-        @coverage_root ||= cobertura[:coverage] unless cobertura.nil?
+      def coverage
+        @coverage ||= cobertura[:coverage] unless cobertura.nil?
       end
 
       def cobertura
@@ -68,6 +62,17 @@ module Coveralls
 
       def file
         @file ||= File.new(filename)
+      end
+
+      def array_from_collection(collection)
+        case collection
+        when Hash
+          [collection]
+        when Array
+          collection
+        else
+          []
+        end
       end
     end
   end
