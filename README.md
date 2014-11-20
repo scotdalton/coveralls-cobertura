@@ -2,6 +2,7 @@
 [![Build Status](https://travis-ci.org/scotdalton/coveralls-cobertura.svg)](https://travis-ci.org/scotdalton/coveralls-cobertura)
 [![Dependency Status](https://gemnasium.com/scotdalton/coveralls-cobertura.svg)](https://gemnasium.com/scotdalton/coveralls-cobertura)
 [![Code Climate](https://codeclimate.com/github/scotdalton/coveralls-cobertura/badges/gpa.svg)](https://codeclimate.com/github/scotdalton/coveralls-cobertura)
+[![Coverage Status](https://img.shields.io/coveralls/scotdalton/coveralls-cobertura.svg)](https://coveralls.io/r/scotdalton/coveralls-cobertura)
 
 Convert [Cobertura](https://github.com/cobertura/cobertura) XML to
 [Coveralls](https://coveralls.io/) source files payload.
