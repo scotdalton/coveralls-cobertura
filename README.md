@@ -1,4 +1,5 @@
 # Coveralls::Cobertura
+[![Build Status](https://travis-ci.org/scotdalton/coveralls-cobertura.svg)](https://travis-ci.org/scotdalton/coveralls-cobertura)
 
 Convert [Cobertura](https://github.com/cobertura/cobertura) XML to
 [Coveralls](https://coveralls.io/) source files payload.
