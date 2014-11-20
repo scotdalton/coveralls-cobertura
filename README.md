@@ -34,7 +34,7 @@ filename = 'path/to/cobertura.xml'
 converter = Coveralls::Cobertura::Converter.new(filename)
 # Convert to Coveralls
 cobertura_source_files = converter.convert
-# Merge in the Cobertura generated source files
-payload[:source_files] = existing_source_files.merge(cobertura_source_files)
+# Add in the Cobertura generated source files
+payload[:source_files] = existing_source_files + cobertura_source_files
 Coveralls::API.post_json(JOBS_ENDPOINT, payload)
 ```
