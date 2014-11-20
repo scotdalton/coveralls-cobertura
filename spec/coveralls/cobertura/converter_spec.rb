@@ -14,12 +14,12 @@ module Coveralls
       describe '#convert' do
         subject { converter.convert }
         it { is_expected.to be_an Array }
-        it 'should have the correct information' do 
-          expected(subject.last).to eq [
+        it 'should have the correct information' do
+          expect(subject.last).to eq({
             'name' => 'src/test/resources/TestSourceFile2.scala',
             'source' => '',
             'coverage' => [1, 1, 1]
-          ]
+          })
         end
       end
 
