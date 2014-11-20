@@ -13,12 +13,13 @@ Gem::Specification.new do |s|
   s.description = "Covert Cobertura XML to Coveralls source files payload"
   s.license     = 'MIT'
 
-  s.files = Dir['lib/**/*'] + ['MIT-LICENSE', 'README.md']
+  s.files = Dir['lib/**/*'] + ['MIT-LICENSE', 'Rakefile', 'README.md']
   s.test_files = Dir['spec/**/*']
 
   s.add_dependency 'require_all', '~> 1.3.0'
   s.add_dependency 'multi_xml', '~> 0.5.0'
 
+  s.add_development_dependency 'rake', '~> 10.1'
   s.add_development_dependency 'rspec', '~> 3.1.0'
   s.add_development_dependency 'nokogiri', '~> 1.6.4'
   s.add_development_dependency 'pry', '~> 0.10'
