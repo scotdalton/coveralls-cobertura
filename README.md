@@ -16,9 +16,11 @@ gem install coveralls-cobertura
 
 ## Usage
 ```ruby
-# Leverage the coveralls
+# Leverage the coveralls gem
 require 'coveralls'
+# Include this gem
 require 'coveralls-cobertura'
+# Coveralls endpoint that we want to send coverage data to
 JOBS_ENDPOINT = 'jobs'
 # Assumes you already have a payload
 existing_source_files = payload[:source_files]
