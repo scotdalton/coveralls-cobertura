@@ -7,3 +7,4 @@ rvm:
   - rbx-2
 
 install: "bundle install --retry=3"
+script: bundle exec rspec
