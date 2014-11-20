@@ -10,6 +10,13 @@ module Coveralls
         subject { converter.filename }
         it { should eq filename }
       end
+
+      context "when the filename doesn't exist" do
+        let(:filename) { "/does/not/exist" }
+        it 'should raise an ArgumentError' do
+          expect { subject }.to raise_error ArgumentError
+        end
+      end
     end
   end
 end

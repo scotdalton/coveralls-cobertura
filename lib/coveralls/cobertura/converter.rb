@@ -4,6 +4,9 @@ module Coveralls
       attr_reader :filename
 
       def initialize(filename)
+        unless File.exists?(filename)
+          raise ArgumentError.new("Expecting file named #{filename} to exist.")
+        end
         @filename = filename
       end
     end
