@@ -20,6 +20,6 @@ Gem::Specification.new do |s|
   s.add_dependency 'multi_xml', '~> 0.5.0'
 
   s.add_development_dependency 'rspec', '~> 3.1.0'
-  s.add_development_dependency 'ox', '~> 2.1.0'
+  s.add_development_dependency 'nokogiri', '~> 1.6.4'
   s.add_development_dependency 'pry', '~> 0.10'
 end
