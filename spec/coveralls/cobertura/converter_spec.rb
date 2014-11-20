@@ -11,6 +11,18 @@ module Coveralls
         it { is_expected.to eq filename }
       end
 
+      describe '#convert' do
+        subject { converter.convert }
+        it { is_expected.to be_an Array }
+        it 'should have the correct information' do 
+          expected(subject.last).to eq [
+            'name' => 'src/test/resources/TestSourceFile2.scala',
+            'source' => '',
+            'coverage' => [1, 1, 1]
+          ]
+        end
+      end
+
       context "when the filename doesn't exist" do
         let(:filename) { "/does/not/exist" }
         it 'should raise an ArgumentError' do
