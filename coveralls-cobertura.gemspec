@@ -19,7 +19,6 @@ Gem::Specification.new do |s|
   s.add_dependency 'require_all', '~> 1.3.0'
   s.add_dependency 'multi_xml', '~> 0.5.0'
 
-  s.add_development_dependency 'rake', '~> 10.1'
   s.add_development_dependency 'rspec', '~> 3.1.0'
   s.add_development_dependency 'ox', '~> 2.1.0'
   s.add_development_dependency 'pry', '~> 0.10'
