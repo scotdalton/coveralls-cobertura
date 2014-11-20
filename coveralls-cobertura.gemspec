@@ -4,7 +4,7 @@ require 'coveralls/cobertura/version'
 
 # Gem description and dependencies:
 Gem::Specification.new do |s|
-  s.name        = 'exlibris-aleph'
+  s.name        = 'coveralls-cobertura'
   s.version     = Coveralls::Cobertura::VERSION
   s.authors     = ['Scot Dalton']
   s.email       = ['scotdalton@gmail.com']
